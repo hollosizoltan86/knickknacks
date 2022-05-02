@@ -1,0 +1,53 @@
+# Copyright (c) 2018 Cloudera, Inc. All rights reserved.
+#
+# This file contains the list of statically allocated service IDs.  We
+# use this for known parcels to reduce the chance of collision when
+# dynamically allocating IDs using the hash algorithm.
+#
+# Do not change the order of this list, add new items at the
+# end.  Sorting this list will result in incompatibilities as
+# new services are added.
+#
+# Line format:
+# NAME, LONGNAME, HOMEDIR, GROUP, SHELL, OTHERGROUPS
+hdfs,Hadoop HDFS,/var/lib/hadoop-hdfs,hdfs,/usr/sbin/nologin,hadoop
+httpfs,Hadoop HTTPFS,/var/lib/hadoop-httpfs,httpfs,/usr/sbin/nologin,
+sqoop,Sqoop,/var/lib/sqoop,sqoop,/usr/sbin/nologin,
+kafka,Kafka,/var/lib/kafka,kafka,/usr/sbin/nologin,
+yarn,Hadoop Yarn,/var/lib/hadoop-yarn,yarn,/usr/sbin/nologin,hadoop
+hbase,HBase,/var/lib/hbase,hbase,/usr/sbin/nologin,
+streamsrepmgr,Streams Replication Manager,/var/lib/streams_replication_manager,streamsrepmgr,/usr/sbin/nologin,
+streamsmsgmgr,Streams Messaging Manager,/var/lib/streams_messaging_manager,streamsmsgmgr,/usr/sbin/nologin,
+livy,Livy,/var/lib/livy,livy,/usr/sbin/nologin,
+kms,Hadoop HDFS,/var/lib/hadoop-kms,kms,/usr/sbin/nologin,
+atlas,Atlas,/var/lib/atlas,atlas,/usr/sbin/nologin,hadoop
+schemaregistry,Schema Registry,/var/lib/schemaregistry,schemaregistry,/usr/sbin/nologin,
+hue,Hue,/usr/lib/hue,hue,/usr/sbin/nologin,
+zookeeper,ZooKeeper,/var/lib/zookeeper,zookeeper,/usr/sbin/nologin,
+accumulo,Accumulo,/var/lib/accumulo,accumulo,/usr/sbin/nologin,
+phoenix,Phoenix User,/var/lib/phoenix,phoenix,/usr/sbin/nologin,
+mapred,Hadoop MapReduce,/var/lib/hadoop-mapreduce,mapred,/usr/sbin/nologin,hadoop
+druid,Druid,/var/lib/druid,druid,/usr/sbin/nologin,hadoop
+ranger,Ranger,/var/lib/ranger,ranger,/usr/sbin/nologin,hadoop
+zeppelin,Zeppelin,/var/lib/zeppelin,zeppelin,/usr/sbin/nologin,
+oozie,Oozie User,/var/lib/oozie,oozie,/usr/sbin/nologin,
+kudu,Kudu,/var/lib/kudu,kudu,/usr/sbin/nologin,
+knox,Knox,/var/lib/knox,knox,/usr/sbin/nologin,hadoop
+superset,Superset,/var/lib/superset,superset,/usr/sbin/nologin,
+solr,Solr,/var/lib/solr,solr,/usr/sbin/nologin,
+hive,Hive,/var/lib/hive,hive,/usr/sbin/nologin,
+cruisecontrol,Cruise Control,/var/lib/cruise_control,cruisecontrol,/usr/sbin/nologin,
+impala,Impala,/var/lib/impala,impala,/usr/sbin/nologin,hive
+rangerraz,Ranger Raz User,/var/lib/rangerraz,rangerraz,/usr/sbin/nologin,ranger hadoop
+ozone,Ozone,/home/ozone,ozone,/usr/sbin/nologin,
+tez,Tez,/home/tez,tez,/usr/sbin/nologin,
+dpprofiler,Dpprofiler,/var/lib/dpprofiler,dpprofiler,/usr/sbin/nologin,
+flume,Flume,/var/lib/flume-ng,flume,/usr/sbin/nologin,
+nifi,NiFi,/var/lib/nifi,nifi,/usr/sbin/nologin,
+nifiregistry,NiFi Registry,/var/lib/nifiregistry,nifiregistry,/usr/sbin/nologin,
+nifitoolkit,NiFiToolkit,/var/lib/nifitoolkit,nifitoolkit,/usr/sbin/nologin,
+spark,Spark,/var/lib/spark,spark,/usr/sbin/nologin,
+flink, CSA Powered by Apache Flink,/var/lib/flink,flink,/usr/sbin/nologin,
+rangerrms,Ranger RMS User,/var/lib/ranger/rms,rangerrms,/usr/sbin/nologin,
+omid,HBase,/var/lib/omid,hbase,/usr/sbin/nologin,
+fakeuser,Fake User,/var/lib/fake,fakeuser,/usr/bin/bash,ranger hadoop
