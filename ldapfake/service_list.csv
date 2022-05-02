@@ -50,4 +50,5 @@ spark,Spark,/var/lib/spark,spark,/usr/sbin/nologin,
 flink, CSA Powered by Apache Flink,/var/lib/flink,flink,/usr/sbin/nologin,
 rangerrms,Ranger RMS User,/var/lib/ranger/rms,rangerrms,/usr/sbin/nologin,
 omid,HBase,/var/lib/omid,hbase,/usr/sbin/nologin,
+easyfake,easyfake,/var/lib/easyfake,easyfake,/usr/sbin/nologin,
 fakeuser,Fake User,/var/lib/fake,fakeuser,/usr/bin/bash,ranger hadoop
